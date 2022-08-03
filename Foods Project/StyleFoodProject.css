@@ -1,0 +1,98 @@
+
+/* Font style imported from google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+/*  Common styles */
+*
+        {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+        }
+
+html
+        {
+    font-size: 62.5%;
+    /* which means that 1 rem = 10px/ usually 1 rem is 16 px so we changed it */
+        }
+/*  end of Common styles */
+/* ***************************************section 1************************************ */
+
+.section-1{
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* align по горизонтали а Justify по вертикали */
+    justify-content: space-evenly;
+}
+
+.section-heading{
+    font-size: 12rem;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: .5rem;
+    text-shadow: 0.3rem 0.3rem 0.3rem #000;
+}
+
+.section-1-icons i{
+    font-size: 35rem;
+    color: #a79a2d;
+    position: absolute;
+    transform: translate(-50%,-50%) scale(0); 
+    /* we also used scale 0 to hide an objects */
+     /* transform translate moves object on X and Y axis */
+    text-shadow: 0.3rem 0.3rem 0.3rem #000;
+    transition: 0.4s 0.4s, color .2s, filter .3s; 
+    filter:drop-shadow(0px 0px 200px #f5e342d8)
+}
+/* some hover effects with transition */
+.section-1-icons i.change{
+    transform: translate(-50%,-50%) scale(1); 
+    transition: 0.4s 0.4s, color .2s, filter .3s;  
+    
+    
+    
+}
+
+.section-1-icons i:hover{
+    color: #f5e343;
+    /* text-shadow: 1rem 1rem 1rem #f5e343; */
+    filter:drop-shadow(0px 0px 30px #f7f6f3);
+     
+}
+/*  we typed transform translate here again so the objects stays on the same place , appears and disappears via scale(1 and 0)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
